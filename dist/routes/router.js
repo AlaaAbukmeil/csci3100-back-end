@@ -7,6 +7,6 @@ const multerGoogleStorage = require("multer-google-storage");
 const multer = require("multer");
 const router = (0, express_1.Router)();
 router.get("/", async (req, res, next) => {
-    res.send({ date: (0, test_1.createDate)() });
+    res.send((0, test_1.createDate)());
 });
 exports.default = router;
