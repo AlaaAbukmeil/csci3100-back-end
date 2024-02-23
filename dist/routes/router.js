@@ -10,4 +10,7 @@ const router = (0, express_1.Router)();
 router.get("/", async (req, res, next) => {
     res.send((0, test_2.createDate)() + (0, test_1.createDateMonth)());
 });
+router.post("/one", async (req, res, next) => {
+    res.send((0, test_1.createDate)());
+});
 exports.default = router;

@@ -13,4 +13,8 @@ router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   res.send(createDate()+createDateMonth());
 });
 
+router.get("/one", async (req: Request, res: Response, next: NextFunction) => {
+  res.send(createDate());
+});
+
 export default router;
