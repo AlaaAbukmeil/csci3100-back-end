@@ -23,4 +23,14 @@ router.post("/post", async(req: Request, res: Response, next: NextFunction) =>{
   }
 })
 
+router.post("/post-alaa", async(req: Request, res: Response, next: NextFunction) =>{
+  try{
+    const formData = req.body
+    //do something
+    res.status(201).json({success:true, data:formData})
+  }catch(error){
+    res.status(500).json({success:false, msg:"Error"})
+  }
+})
+
 export default router;
