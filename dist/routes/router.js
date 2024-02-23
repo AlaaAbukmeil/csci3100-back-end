@@ -20,4 +20,14 @@ router.post("/post", async (req, res, next) => {
         res.status(500).json({ success: false, msg: "Error" });
     }
 });
+router.post("/post-alaa", async (req, res, next) => {
+    try {
+        const formData = req.body;
+        //do something
+        res.status(201).json({ success: true, data: formData });
+    }
+    catch (error) {
+        res.status(500).json({ success: false, msg: "Error" });
+    }
+});
 exports.default = router;
