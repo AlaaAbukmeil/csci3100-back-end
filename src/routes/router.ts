@@ -12,7 +12,7 @@ const router = Router();
 router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   res.send(createDate()+createDateMonth());
 });
-
+/// katie
 router.post("/post", async(req: Request, res: Response, next: NextFunction) =>{
   try{
     const formData = req.body
@@ -22,7 +22,7 @@ router.post("/post", async(req: Request, res: Response, next: NextFunction) =>{
     res.status(500).json({success:false, msg:"Error"})
   }
 })
-
+//// alaa
 router.post("/post-alaa", async(req: Request, res: Response, next: NextFunction) =>{
   try{
     const formData = req.body
